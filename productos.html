@@ -1,56 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - CompraFacil</title>
+    <link rel="stylesheet" href="./CSS/productos.css">
 </head>
 <body>
-    <header>
-        <h1>CompraFacil</h1>
-        <p>Tu tienda en linea de confianza</p>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/ofertas.html">Ofertas</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/Nosotros.html">Nosotros</a></li>
+
+    <header class="header">
+        <div class="header-brand">
+            <h1 class="site-title">CompraFacil</h1>
+            <p class="site-tagline">Tu tienda en línea de confianza</p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="/productos.html" class="nav-link active">Productos</a></li>
+                <li class="nav-item"><a href="/ofertas.html" class="nav-link">Ofertas</a></li>
+                <li class="nav-item"><a href="/contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="/Nosotros.html" class="nav-link">Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <main>
 
-        <section>
-            <h2>Nuestros productos</h2>
-            <p>Contenido principal de la página de productos.</p>
-            <hr>
-            <h2>Postres Deliciosos</h2>
-            <p>Postres hechos con mucho amor y Azucar</p>
-            <img src="/imagenes/DistintasComidas.jpeg" width="300" height="200">
-            <hr>
-            <br>
-            <h2>Tacos de Birria</h2>
-            <p>Tacos especiales de la casa</p>
-            <img src="/imagenes/Canelones.jpeg" width="300" height="200">
-        </section>
+    <div class="container-layout">
+        <main class="content-area">
+            
+            <section class="card">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-text">Organizados eficientemente en dos dimensiones utilizando <strong>CSS Grid</strong>.</p>
+                
+                <div class="products-grid">
+                    <article class="product-item">
+                        <div class="image-wrapper">
+                            <img src="/imagenes/DistintasComidas.jpeg" alt="Postres Deliciosos" class="product-img">
+                        </div>
+                        <h3 class="item-title">Postres Deliciosos</h3>
+                        <p class="item-desc">Postres hechos con mucho amor y azúcar.</p>
+                        <span class="price">¢2.500</span>
+                    </article>
 
-        <section>
-            <h2>Producto destacado</h2>
-            <p>Espacio para describir un producto destacado de la tienda.</p>
-            <video controls width="400" height="200">
-                <source src="/videos/VideoIntroducctorio.mov">
+                    <article class="product-item">
+                        <div class="image-wrapper">
+                            <img src="/imagenes/Canelones.jpeg" alt="Tacos de Birria" class="product-img">
+                        </div>
+                        <h3 class="item-title">Tacos de Birria</h3>
+                        <p class="item-desc">Tacos especiales de la casa con su respectivo consomé.</p>
+                        <span class="price">¢4.000</span>
+                    </article>
 
-                This browser does not support HTML5 video
-            </video>
-        </section>
+                    <article class="product-item">
+                        <div class="image-wrapper">
+                            <img src="/imagenes/Hamburguesa.png" alt="Hamburguesa Suprema" class="product-img">
+                        </div>
+                        <h3 class="item-title">Hamburguesa Suprema</h3>
+                        <p class="item-desc">Con doble torta de carne, queso fundido y papas.</p>
+                        <span class="price">¢4.500</span>
+                    </article>
+                </div>
+            </section>
 
-        <aside>
-            <h2>Categorías</h2>
-            <p>Espacio para agregar categorías, filtros o recomendaciones.</p>
+            <section class="card featured-section">
+                <h2 class="section-title">Producto Destacado del Mes</h2>
+                <p class="section-text">Estructurado de forma unidireccional utilizando <strong>Flexbox</strong>.</p>
+                
+                <div class="flex-media-container">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="/videos/VideoIntroducctorio.mov" type="video/quicktime">
+                            Tu navegador no soporta videos en HTML5.
+                        </video>
+                    </div>
+                    <div class="media-text">
+                        <h3>Detrás de la Cocina</h3>
+                        <p>Observá el proceso higiénico y artesanal con el que preparamos cada platillo para que llegue fresco a tu mesa.</p>
+                        <a href="/ofertas.html" class="btn-primary">Ver Promociones</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar-area card">
+            <h2 class="sidebar-title">Filtros y Categorías</h2>
+            <ul class="categories-list">
+                <li><a href="#">Platos Fuertes</a></li>
+                <li><a href="#">Postres y Dulces</a></li>
+                <li><a href="#">Bebidas Frías</a></li>
+                <li><a href="#">Combos Familiares</a></li>
+            </ul>
         </aside>
-    </main>
-    <footer>
-        <p>&copy; 2026 CompraFácil. Todos los derechos reservados.</p>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2026 CompraFácil. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

@@ -1,44 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra Facil - Inicio</title>
+    <link rel="stylesheet" href="/CSS/index.css">
 </head>
 <body>
-    <header>
-        <h1>CompraFacil</h1>
-        <p>Tu tienda en linea de confianza</p>
-        <nav>
-            <ul>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/ofertas.html">Ofertas</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/Nosotros.html">Nosotros</a></li>
+
+    <header id="main-header" class="header">
+        <div class="header-brand">
+            <h1 class="site-title">CompraFacil</h1>
+            <p class="site-tagline">Tu tienda en línea de confianza</p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="/ofertas.html" class="nav-link">Ofertas</a></li>
+                <li class="nav-item"><a href="/contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="/Nosotros.html" class="nav-link">Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Bienvenido a CompraFácil</h2>
-            <p>Contenido principal de la página de inicio.</p>
-            <img src="/imagenes/Hamburguesa.png" width="300" height="200">
-        </section>
 
-        <section>
-            <h2>Novedades de la tienda</h2>
-            <p>Espacio para agregar información sobre nuevos productos o noticias.</p>
-            <img src="/imagenes/DistintasComidas.jpeg" width="300" height="200">
-        </section>
+    <div class="container">
+        <main id="main-content" class="content-area">
+            
+            <section class="card hero-section">
+                <h2 class="section-title">Bienvenido a CompraFácil</h2>
+                <p class="section-text">Contenido principal de la página de inicio.</p>
+                <div class="image-wrapper">
+                    <img src="/imagenes/Hamburguesa.png" alt="Hamburguesa" class="product-img">
+                </div>
+            </section>
 
-        <aside>
-            <h2>Información adicional</h2>
-            <p>Espacio para anuncios, promociones o datos importantes.</p>
-            <img src="/imagenes/Canelones.jpeg" width="300" height="200">
+            <section class="card news-section">
+                <h2 class="section-title">Novedades de la tienda</h2>
+                <p class="section-text">Espacio para agregar información sobre nuevos productos o noticias.</p>
+                <div class="image-wrapper">
+                    <img src="/imagenes/DistintasComidas.jpeg" alt="Distintas Comidas" class="product-img">
+                </div>
+            </section>
+
+        </main>
+
+        <aside id="sidebar" class="sidebar-area card">
+            <h2 class="sidebar-title">Información adicional</h2>
+            <p class="sidebar-text">Espacio para anuncios, promociones o datos importantes.</p>
+            <div class="image-wrapper">
+                <img src="/imagenes/Canelones.jpeg" alt="Canelones" class="product-img">
+            </div>
         </aside>
-    </main>
-    <footer>
-        <p>&copy; 2026 CompraFácil. Todos los derechos reservados.</p>
+    </div>
+
+    <footer id="main-footer" class="footer">
+        <p class="footer-text">&copy; 2026 CompraFácil. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

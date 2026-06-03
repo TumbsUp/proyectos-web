@@ -1,0 +1,73 @@
+/* Estilos Base Heredados de Inicio */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+
+/* Header Unificado */
+.header { background-color: #fff; padding: 1.5rem 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.site-title { color: #2b6cb0; font-size: 1.8rem; font-weight: 700; }
+.site-tagline { color: #718096; font-size: 0.9rem; }
+.nav-list { display: flex; list-style: none; gap: 1.5rem; }
+.nav-link { text-decoration: none; color: #4a5568; font-weight: 500; }
+.nav-link:hover, .nav-link.active { color: #2b6cb0; border-bottom: 2px solid #2b6cb0; }
+
+/* Contenedores Estructurales */
+.container-layout { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; display: flex; gap: 2rem; flex-wrap: wrap; }
+.content-area { flex: 3; display: flex; flex-direction: column; gap: 2rem; min-width: 300px; }
+.sidebar-area { flex: 1; min-width: 250px; height: fit-content; }
+.card { background-color: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border: 1px solid #edf2f7; }
+.section-title, .sidebar-title { color: #2d3748; margin-bottom: 0.75rem; font-size: 1.4rem; }
+.section-text { color: #4a5568; margin-bottom: 1.5rem; }
+
+/* ==========================================================================
+   DEMOSTRACIÓN DE CSS GRID (Ideal para cuadriculas repetitivas)
+   ========================================================================== */
+.products-grid {
+    display: grid;
+    /* Crea columnas automáticas adaptativas de mínimo 220px */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper { overflow: hidden; border-radius: 6px; margin-bottom: 0.75rem; }
+.product-img { width: 100%; height: 150px; object-fit: cover; transition: transform 0.3s; }
+.product-img:hover { transform: scale(1.05); }
+.item-title { font-size: 1.1rem; color: #2d3748; margin: 0.5rem 0; }
+.item-desc { font-size: 0.9rem; color: #718096; flex-grow: 1; }
+.price { display: block; margin-top: 0.75rem; font-weight: bold; color: #2b6cb0; font-size: 1.2rem; }
+
+/* ==========================================================================
+   DEMOSTRACIÓN DE FLEXBOX (Ideal para alinear componentes lineales)
+   ========================================================================== */
+.flex-media-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que baje en móviles */
+}
+
+.video-wrapper { flex: 1; min-width: 280px; }
+.video-wrapper video { width: 100%; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.media-text { flex: 1; min-width: 280px; }
+.media-text h3 { color: #2d3748; margin-bottom: 0.5rem; }
+
+.btn-primary { display: inline-block; padding: 0.6rem 1.2rem; background-color: #2b6cb0; color: white; text-decoration: none; border-radius: 4px; font-weight: 500; margin-top: 1rem; }
+.btn-primary:hover { background-color: #2c5282; }
+
+/* Sidebar */
+.categories-list { list-style: none; }
+.categories-list li { margin-bottom: 0.5rem; }
+.categories-list a { text-decoration: none; color: #4a5568; }
+.categories-list a:hover { color: #2b6cb0; padding-left: 5px; transition: all 0.2s; }
+
+/* Footer */
+.footer { background-color: #fff; text-align: center; padding: 1.5rem; margin-top: 3rem; border-top: 1px solid #edf2f7; }
+.footer-text { color: #a0aec0; font-size: 0.9rem; }

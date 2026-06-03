@@ -1,0 +1,61 @@
+/* Estilos Base Heredados */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+
+/* Header Unificado */
+.header { background-color: #fff; padding: 1.5rem 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.site-title { color: #2b6cb0; font-size: 1.8rem; font-weight: 700; }
+.site-tagline { color: #718096; font-size: 0.9rem; }
+.nav-list { display: flex; list-style: none; gap: 1.5rem; }
+.nav-link { text-decoration: none; color: #4a5568; font-weight: 500; }
+.nav-link:hover, .nav-link.active { color: #2b6cb0; border-bottom: 2px solid #2b6cb0; }
+
+.container-narrow { max-width: 900px; margin: 2rem auto; padding: 0 1rem; display: flex; flex-direction: column; gap: 2rem; }
+.card { background-color: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border: 1px solid #edf2f7; }
+.section-title { color: #2d3748; margin-bottom: 0.5rem; font-size: 1.4rem; }
+.section-text { color: #718096; margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+/* ==========================================================================
+   LÍNEA DE TIEMPO INTERNA CON FLEXBOX
+   ========================================================================== */
+.timeline-flex {
+    display: flex;
+    flex-direction: column; /* Flujo puramente unidireccional vertical */
+    gap: 1.5rem;
+    border-left: 3px solid #e2e8f0;
+    padding-left: 1.5rem;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.item-milestone { color: #2b6cb0; font-size: 1.1rem; margin-bottom: 0.25rem; }
+
+/* ==========================================================================
+   ESTRUCTURA DE IDENTIDAD CON CSS GRID (Bloques paralelos exactos de 1fr 1fr)
+   ========================================================================== */
+.identity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el espacio exactamente en la mitad */
+    gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .identity-grid { grid-template-columns: 1fr; } /* Colapsa en móviles */
+}
+
+.title-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 0.5rem;
+}
+
+.title-with-icon h2 { color: #2d3748; font-size: 1.3rem; }
+
+/* Footer */
+.footer { background-color: #fff; text-align: center; padding: 1.5rem; margin-top: 3rem; border-top: 1px solid #edf2f7; }
+.footer-text { color: #a0aec0; font-size: 0.9rem; }

@@ -1,58 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - CompraFacil</title>
+    <link rel="stylesheet" href="/CSS/nosotros.css">
 </head>
 <body>
-    <header>
-        <h1>CompraFacil</h1>
-        <p>Tu tienda en linea de confianza</p>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/ofertas.html">Ofertas</a></li>
+
+    <header class="header">
+        <div class="header-brand">
+            <h1 class="site-title">CompraFacil</h1>
+            <p class="site-tagline">Tu tienda en línea de confianza</p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="/productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="/ofertas.html" class="nav-link">Ofertas</a></li>
+                <li class="nav-item"><a href="/contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="/Nosotros.html" class="nav-link active">Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-      <section>
-        <h2>Historia</h2>
-        <article>
-            <h3>Nacimiento de la Empresa</h3>
-            <p>jsdfksd</p>
-        </article>
-        <article>
-            <h3>Logros Actuales</h3>
-            <p>psdfsdfsdf</p>
-        </article>
-      </section>  
-      <section>
-        <article>
-            <h2>Mision</h2>
-            <img src="/iconos/dumbbel-svgrepo-com.svg" width="30" height="20">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec hendrerit convallis risus ac semper. Sed at ante ac 
-                nisi dignissim laoreet. <b>Vestibulum</b> quis neque massa. Curabitur 
-                feugiat ante et libero interdum pellentesque.
-            </p>
-        </article>
-        <article>
-            <h2>Vision</h2>
-            <img src="/iconos/running-svgrepo-com.svg" width="30" height="20">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec hendrerit convallis risus ac semper. Sed at ante ac 
-                nisi dignissim laoreet. <b>Vestibulum</b> quis neque massa. Curabitur 
-                feugiat ante et libero interdum pellentesque.
-            </p>
-        </article>
-      </section>
+
+    <main class="container-narrow">
+        
+        <section class="card structural-history">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <p class="section-text">Línea cronológica ordenada de arriba a abajo utilizando <strong>Flexbox (column)</strong>.</p>
+            
+            <div class="timeline-flex">
+                <article class="timeline-item">
+                    <h3 class="item-milestone">Nacimiento de la Empresa (2020)</h3>
+                    <p>Iniciamos como un pequeño emprendimiento familiar en Puntarenas, distribuyendo comida casera express a nuestros vecinos durante la época de confinamiento.</p>
+                </article>
+                
+                <article class="timeline-item">
+                    <h3 class="item-milestone">Logros Actuales (2026)</h3>
+                    <p>Hoy contamos con una plataforma web optimizada, un catálogo extendido y entregas consolidadas manteniendo el sabor tradicional y el servicio de confianza.</p>
+                </article>
+            </div>
+        </section>  
+
+        <section class="identity-grid">
+            <article class="card identity-card">
+                <div class="title-with-icon">
+                    <img src="/iconos/dumbbel-svgrepo-com.svg" width="30" height="30" alt="Icono Misión">
+                    <h2>Misión</h2>
+                </div>
+                <p>Ofrecer a la comunidad costarricense un acceso rápido, confiable y seguro a productos alimenticios de alta calidad, promoviendo el desarrollo local y una atención al cliente de primer nivel.</p>
+            </article>
+
+            <article class="card identity-card">
+                <div class="title-with-icon">
+                    <img src="/iconos/running-svgrepo-com.svg" width="30" height="30" alt="Icono Visión">
+                    <h2>Visión</h2>
+                </div>
+                <p>Consolidarnos para el año 2030 como la tienda virtual líder en entregas a domicilio de la provincia, reconocida por la innovación tecnológica y nuestro fuerte compromiso social.</p>
+            </article>
+        </section>
+
     </main>
-    <footer>
+
+    <footer class="footer">
         <p>&copy; 2026 CompraFácil. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
