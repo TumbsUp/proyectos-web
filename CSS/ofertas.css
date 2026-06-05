@@ -1,19 +1,85 @@
 /* Estilos Base Heredados */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
 
 /* Header Unificado */
-.header { background-color: #fff; padding: 1.5rem 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-.site-title { color: #2b6cb0; font-size: 1.8rem; font-weight: 700; }
-.site-tagline { color: #718096; font-size: 0.9rem; }
-.nav-list { display: flex; list-style: none; gap: 1.5rem; }
-.nav-link { text-decoration: none; color: #4a5568; font-weight: 500; }
-.nav-link:hover, .nav-link.active { color: #2b6cb0; border-bottom: 2px solid #2b6cb0; }
+.header {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-.container-offers { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; display: flex; flex-direction: column; gap: 2rem; }
-.card { background-color: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border: 1px solid #edf2f7; }
-.section-title { color: #2d3748; margin-bottom: 0.5rem; font-size: 1.4rem; }
-.section-text { color: #718096; margin-bottom: 1.5rem; }
+.site-title {
+    color: #2b6cb0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.site-tagline {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2b6cb0;
+    border-bottom: 2px solid #2b6cb0;
+}
+
+.container-offers {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid #edf2f7;
+}
+
+.section-title {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.section-text {
+    color: #718096;
+    margin-bottom: 1.5rem;
+}
 
 /* ==========================================================================
    FLEXBOX: Centrado y alineación flexible
@@ -22,16 +88,42 @@ body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #3
     background: linear-gradient(135deg, #2b6cb0 0%, #4299e1 100%);
     color: white;
     display: flex;
-    justify-content: center; /* Centra horizontalmente en row */
-    align-items: center;     /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente en row */
+    align-items: center;
+    /* Centra verticalmente */
     text-align: center;
     padding: 3rem 1rem;
 }
 
-.badge-tag { background: #ff9900; color: white; padding: 0.2rem 0.6rem; font-size: 0.8rem; font-weight: bold; border-radius: 4px; }
-.banner-content h2 { margin: 0.5rem 0; font-size: 1.8rem; }
-.btn-action { display: inline-block; margin-top: 1rem; background: white; color: #2b6cb0; padding: 0.6rem 1.5rem; text-decoration: none; font-weight: bold; border-radius: 4px; }
-.btn-action:hover { background: #f7fafc; }
+.badge-tag {
+    background: #ff9900;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.banner-content h2 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+.btn-action {
+    display: inline-block;
+    margin-top: 1rem;
+    background: white;
+    color: #2b6cb0;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-action:hover {
+    background: #f7fafc;
+}
 
 /* ==========================================================================
    CSS GRID: Estructura de Mosaicos Repetitivos
@@ -51,10 +143,39 @@ body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #3
     background: #fffdf5;
 }
 
-.discount-num { color: #e53e3e; font-size: 1.5rem; font-weight: bold; margin-bottom: 0.25rem; }
-.coupon-item h4 { color: #2d3748; font-family: monospace; font-size: 1.1rem; background: #edf2f7; padding: 0.2rem; display: inline-block; border-radius: 4px; margin-bottom: 0.5rem;}
-.coupon-item p { font-size: 0.85rem; color: #718096; }
+.discount-num {
+    color: #e53e3e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.coupon-item h4 {
+    color: #2d3748;
+    font-family: monospace;
+    font-size: 1.1rem;
+    background: #edf2f7;
+    padding: 0.2rem;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.coupon-item p {
+    font-size: 0.85rem;
+    color: #718096;
+}
 
 /* Footer */
-.footer { background-color: #fff; text-align: center; padding: 1.5rem; margin-top: 3rem; border-top: 1px solid #edf2f7; }
-.footer-text { color: #a0aec0; font-size: 0.9rem; }
+.footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 1px solid #edf2f7;
+}
+
+.footer-text {
+    color: #a0aec0;
+    font-size: 0.9rem;
+}
